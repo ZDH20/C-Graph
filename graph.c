@@ -4,21 +4,21 @@
 #include <stdlib.h>
 
 struct Edge_t {
-  char    data;
-  int     cost;
+  char data;
+  int cost;
   Edge_t *next;
 };
 
 struct Vertex_t {
-  char      data;
-  Edge_t   *edges;
+  char data;
+  Edge_t *edges;
   Vertex_t *next;
 };
 
 struct Graph_t {
   Vertex_t *head;
-  size_t    vert_sz;
-  size_t    edge_sz;
+  size_t vert_sz;
+  size_t edge_sz;
 };
 
 void panic(char *err_msg) {
